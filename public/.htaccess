@@ -19,3 +19,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+AuthType Basic
+AuthName "IDとパスワードを入力してください"
+AuthUserFile /Users/kazu/projects/laravel_test1/public/.htpassword
+require valid-user
